@@ -7,65 +7,75 @@
 </head>
 
 <body>
-    <h2>Тренируемся с элементами форм</h2>
-    <p><b>Форма с методом GET</b></p>
+<h2 class="center">Форма с методом GET</h2>
 
-    <form action="/address.php" method="get">
-        <label>Enter your first name</label>
-        <input type="text" id="clientFirstName" name="clientFirstName">
-        <br>
-        <br>
-        <label>Enter your last name</label>
-        <input type="text" id="clientLastName" name="clientLastName">
+<form action="/address.php" method="get">
+    <label>Enter your first name</label>
+    <input type="text" id="clientFirstName" name="clientFirstName">
+    <br>
+    <br>
+    <label>Enter your last name</label>
+    <input type="text" id="clientLastName" name="clientLastName">
 
-        <button type="submit">SEND</button>
-    </form>
+    <button type="submit">SEND</button>
+</form>
 
+<h2 class="center">Форма с методом POST</h2>
+
+<form action="/input.php" method="post">
     <p><b>Я всегда с собой беру</b></p>
+    <input id="video" type="radio" name="test1">
+    <label for="video"> Видеокамеру</label> <br>
+    <input id="friend" type="radio" name="test1">
+    <label for="friend"> Тёщу</label> <br>
+    <input id="Job" type="radio" name="test1">
+    <label for="Job"> Пропуск в офис</label>
 
-    <form action="input10.php">
-        <p><input type="radio" name="test1" value="rad1"> Видеокамеру<Br>
-            <input type="radio" name="test1" value="rad2"> Тёщу<Br>
-            <input type="radio" name="test1" value="rad3"> Пропуск в офис</p>
-    </form>
 
     <p><b>Завтрак чемпиона</b></p>
+    <label>
+        <input type="checkbox" name="languages" value="HTML">
+        Печеньки
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="languages" value="CSS">
+        Кофе
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="languages" value="JS">
+        Сухофрукты
+    </label>
 
-    <form action="input10.php">
-        <p><input type="checkbox" name="test2" value="checkbox1"> Печеньки<Br>
-            <input type="checkbox" name="test2" value="checkbox2"> Кофе<Br>
-            <input type="checkbox" name="test2" value="checkbox3"> Сухофрукты</p>
-    </form>
 
     <p><b>Атрибуты удаленки</b></p>
-    <form action="select1.php" method="post">
-        <p><select size="4" multiple name="attr[]">
-            <option disabled>Выберите из списка ниже</option>
-            <option value="Котики">Котики</option>
-            <option value="Домашняя одежда">Домашняя одежда</option>
-            <option value="Громкий сосед">Громкий сосед</option>
-            </select>
-        </p>
-    <p><input type="submit" value="Отправить"></p>
+    <p><select size="4" multiple name="attr[]">
+        <option disabled>Выберите из списка ниже</option>
+        <option value="Котики">Котики</option>
+        <option value="Домашняя одежда">Домашняя одежда</option>
+        <option value="Громкий сосед">Громкий сосед</option>
+    </select></p>
+
 
     <p><b>Самая популярная еда в мире?</b></p>
-        <form action="select2.php" method="post">
-            <p><select size="1">
-                <option disabled>Выберите из списка ниже</option>
-                <option value="Хлеб">Хлеб</option>
-                <option value="Пицца">Пицца</option>
-                <option value="Суши">Суши</option>
-                <option value="Мясо">Мясо</option>
-            </select>
-            </p>
-    <p><input type="submit" value="Отправить"></p>
-    </form>
+    <p><select size="1">
+        <option disabled>Выберите из списка ниже</option>
+        <option value="Хлеб">Хлеб</option>
+        <option value="Пицца">Пицца</option>
+        <option value="Суши">Суши</option>
+        <option value="Мясо">Мясо</option>
+    </select></p>
 
-    <form>
-            <p><b>Для заметок:</b></p>
-            <p><textarea name="comment"></textarea></p>
-            <p><input type="submit"></p>
-    </form>
+
+    <p><b>Для заметок:</b></p>
+    <p><textarea name="comment"></textarea></p>
+
+    <p><input type="submit"></p>
+
+</form>
+
+
 </body>
 
 </html>

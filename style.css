@@ -7,3 +7,68 @@ td {
   padding: 10px;
   padding-left: 10px;
 }
+
+h2 {
+color: coral;
+font-family: "Times New Roman", Georgia, Serif;
+line-height: 1.3em;
+}
+
+button {
+    display: inline-block;
+    margin: 7px;
+    padding: 3px 5px;
+    background: #B8ED01;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.5),
+        0 2px 2px rgba(0,0,0,0.3),
+        0 0 4px 1px rgba(0,0,0,0.2);
+    /* Font styles */
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255,255,255,0.7);
+}
+
+button:hover {
+    background: #C7FE0A
+}
+
+
+table {
+	width: 40%;
+	border: none;
+	margin-bottom: 20px;
+}
+table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #d8d8d8;
+	font-size: 14px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+table tbody td {
+	text-align: left;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+table thead tr th:first-child, .table tbody tr td:first-child {
+	border-left: none;
+}
+table thead tr th:last-child, .table tbody tr td:last-child {
+	border-right: none;
+}
+table tbody tr:nth-child(even){
+	background: #f3f3f3;
+}
+
+.center {
+  text-align: center;
+}
